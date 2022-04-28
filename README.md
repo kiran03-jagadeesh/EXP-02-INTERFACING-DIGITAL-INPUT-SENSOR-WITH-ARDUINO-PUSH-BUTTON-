@@ -67,7 +67,30 @@ FIGURE -03
 
 
 PROGRAM 
- 
+ ~~~
+Developed by: Kiran J
+Reg no: 212221240022
+ // C++ code
+//
+int buttonstate=0;
+void setup()
+{
+  pinMode(2, OUTPUT);
+  pinMode(13, INPUT);
+}
+
+void loop()
+{
+  //reade the state of the pushbutton
+  buttonstate = digitalRead(13);
+  if (buttonstate == HIGH){
+    digitalWrite(2,HIGH);
+  } else {
+    digitalWrite(2,LOW);
+  }
+    delay(10);  
+}
+~~~
  
  
  
@@ -79,3 +102,4 @@ Output of the simulation :
 
 [My image](username.github.com/repository/img/image.jpg)
 
+![output](img.1.jpg)
